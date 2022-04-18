@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Google sans', arial, sans-serif;
+    text-decoration: none;
+
+}
+:root{
+    --fundo: #242D34;
+    --fundo2: #000000;
+    --border_color: #2F3336;
+    --button_background: #EFF3F4;
+}
+html, body{
+    height: 100%
+}
+
+body{
+    background-color: var(--fundo);
+    display: grid;
+    place-items: center;
+}
+.container {
+    background-color: var(--fundo2);
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    border-radius: 20px;
+}
+.main{
+   width: 70%;
+   margin: 70px 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.main h1{
+    font-family: inherit;
+}
+.signin_button{
+    background-color: var(--button_background);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.signin_button:hover{
+    background-color: #E6E6E6;
+    
+}
+.signin_button svg{
+    width: 25px;
+}
+.or{
+    display: flex;
+    width: 100%;
+}
+.or span{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.or span::before, .or span::after{
+    display: block;
+    content: "";
+    background-color: var(--border_color) ;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);   
+    height: 2px;
+}
+.or span::before{
+    left: 0;
+
+}
+.or span::after{
+    right: 0;
+}
+input{
+    padding: 16px 22px;
+    background: none;
+    border: solid var(--border_color) 1px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+input::placeholder{
+    color: #676F76;
+    font-size: 1rem;
+}
+.forgot{
+    background: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--border_color) 1px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 100px;
+}
+.sign_up span{
+    color: #484E52;
+}
+.sign_up a{
+    color: #1677B8;
+}
+#logott{
+    fill: white;
+    width: 34px;
+    height: 25px;
+    justify-self: center;
+    margin: 10px;
+}
+#close{
+    fill: white;
+    display: flex;
+    width: 25px;
+    margin: 10px;
+    transition: 500ms;
+}
+#close:hover{
+    background-color: #676F76;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.top_itens {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+}
+
